@@ -7,4 +7,4 @@ reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation" /v "Logo
 rem remove logo from recent docs
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.bmp" /v "MaxDisplay" /t REG_DWORD /d "0" /f
 
-start /b /wait powershell -windowstyle hidden -command "irm https://christitus.com/win | iex"
+start /b /wait powershell -command "irm https://christitus.com/win | iex"
