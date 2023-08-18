@@ -17,4 +17,4 @@ $psScript = Invoke-WebRequest -Uri $psScriptUrl | Select-Object -ExpandProperty 
 Invoke-Expression $psScript
 
 # Self-destruct the script
-Remove-Item -Path $MyInvocation.MyCommand.Path -Force
+# Remove-Item -Path $MyInvocation.MyCommand.Path -Force
